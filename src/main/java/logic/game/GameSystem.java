@@ -90,4 +90,19 @@ public class GameSystem {
 		
 	}
 
+	public BaseUnit promote(BaseUnit baseUnit, int choice){
+		switch (choice){
+			case (0) :
+				MeleeUnit Melee = new MeleeUnit(baseUnit.getColumn(), baseUnit.getRow(), baseUnit.isWhite(),baseUnit.getName());
+				return Melee;
+			case (1) :
+				RangeUnit Range = new RangeUnit(baseUnit.getColumn(), baseUnit.getRow(), baseUnit.isWhite(),baseUnit.getName());
+				return Range;
+			case (2) :
+				FlyingUnit Flying = new FlyingUnit(baseUnit.getColumn(), baseUnit.getRow(), baseUnit.isWhite(),baseUnit.getName());
+				return Flying;
+		}
+		return baseUnit;
+	}
+
 }
