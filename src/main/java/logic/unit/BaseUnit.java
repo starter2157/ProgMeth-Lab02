@@ -4,9 +4,9 @@ import java.util.ArrayList;
 
 public class BaseUnit {
     private int row, column;
-    int power = 1, hp = 2;
+    protected int power = 1, hp = 2;
     private boolean isWhite;
-    boolean isFlying = false;
+    protected boolean isFlying = false;
     private String name;
 
     public BaseUnit(int startColumn, int startRow, boolean isWhite, String name){

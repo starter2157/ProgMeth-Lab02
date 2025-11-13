@@ -1,0 +1,25 @@
+@startuml
+class logic.unit.BaseUnit {
+- int row
+~ int power
+- boolean isWhite
+~ boolean isFlying
+- String name
++ boolean move(int)
++ void attack(ArrayList<BaseUnit>)
++ int getRow()
++ void setRow(int)
++ int getColumn()
++ void setColumn(int)
++ int getHp()
++ void setHp(int)
++ int getPower()
++ boolean isWhite()
++ void setWhite(boolean)
++ boolean isFlying()
++ String getName()
++ void setName(String)
+}
+
+
+@enduml

@@ -4,9 +4,9 @@ public class FlyingUnit extends BaseUnit{
 
     public FlyingUnit(int startColumn, int startRow, boolean isWhite, String name){
         super(startColumn, startRow, isWhite, name);
-        power = 1;
-        hp = 2;
-        isFlying = true;
+        this.power = 1;
+        this.hp = 2;
+        this.isFlying = true;
     }
 
     @Override
